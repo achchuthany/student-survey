@@ -119,16 +119,18 @@
                             while($row = mysqli_fetch_assoc($result)) {
                                if($now <= $row["date_valid"]) echo '<tr class="success">';
                                else echo '<tr class="warning">';
-                                
+
                             echo    '<td>'. $row["department_id"]. '</td>
                                     <td>'. $row["course"]. '</td>
                                     <td>'. $row["module"]. '</td>
                                     <td>'. $row["trainer"]. '</td>
                                     <td>'. $row["term"]. '</td>
                                     <td>'. $row["date_valid"]. '</td>
-                                    <td><a href="surveyProfile.php?token='. $row["token"].'">Survey Profile</a></td>
-                                    
-                                </tr>';                
+                                    <td><a href="surveyProfile.php?token='. $row["token"].'">Survey Profile</a>
+                                        <a target="_blank" href="student-survey.php?token='. $row["token"].'">Survey Profile</a>
+                                    </td>
+
+                                </tr>';
                             }
                         } else {
                             echo '<tr><td colspan="6"> 0 Results</td></tr>';
