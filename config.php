@@ -16,4 +16,4 @@ define('DB_PASS','' ); // 8ddTnst22X3Y
 define('DB_NAME','survey');
 
 $now = date("Y-m-d H:i:s");
-$con = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME) or die("Failed to connect to MySQL: ".mysqli_connect_error());
+//$con = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME) or die("Failed to connect to MySQL: ".mysqli_connect_error());
