@@ -1,6 +1,6 @@
 <?php include_once("config.php");    ?>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -18,8 +18,12 @@
             <ul class="nav navbar-nav">
                 <!--<li><a href="student-survey.php">Take Survey</a></li>-->
                 <!--<li><a href="viewRecords.php">View all Records</a></li>-->
-                <li><a href="trainerList.php">Trainer List</a></li>
-                <li><a href="surveyList.php">Survey List</a></li>
+                
+                <li><a href="surveyList.php">Survey</a></li>
+                <li><a href="department.php">Department</a></li>
+                <li><a href="course.php">Course</a></li>
+               <li><a href="trainerList.php">Trainer</a></li>
+                
 
             </ul>
 

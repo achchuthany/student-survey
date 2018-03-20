@@ -136,14 +136,11 @@
         </div>
 
         <div class="row">
-            <div class="col-md-11">
+            <div class="col-md-11 col-sm-12">
                 <div class=" page-header">
-                    <h3>Survey Profile</h3>
+                    <h3>Survey Profile <span class="btn glyphicon glyphicon-print"  onClick="window.print()"></span></h3>
                 </div>
-            </div>
-            <div class="col-md-1">
-                <button class="btn btn-primary btn-sm" onClick="window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span></button>
-            </div>
+            </div>          
         </div>
 
 
@@ -162,10 +159,10 @@
 
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-md-2 ">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">Score: </label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-8 col-xs-8">
                             <?php if($count!= 0) 
                                     echo sprintf("%01.2f" , ($catA1 + $catA2 + $catA3 + $catA4 + $catA5 + $catA6 + $catA7 + $catA8 + $catA9 + $catB1 + $catB2 + $catB3 + $catB4 + $catB5 + $catB6 + $catB7 + $catB8 + $catB9)/($count*18));
                                     else echo'0.00';
@@ -173,10 +170,10 @@
 
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">Number of Records: </label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-8 col-xs-8">
                             <?php echo $count; ?>
                         </div>
 
@@ -185,17 +182,17 @@
 
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">Course: </label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-8 col-xs-8">
                             <?php echo $course;?>
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">Module: </label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-8 col-xs-8">
                             <?php echo $module;?>
                         </div>
 
@@ -203,17 +200,17 @@
                 </div>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">Teacher’s Name: </label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-8 col-xs-8">
                             <?php echo $trainer;?>
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">Study Term: </label>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-8 col-xs-8">
                             <?php echo $term;?>
                         </div>
                     </div>
@@ -231,12 +228,12 @@
                 <div class="form-group">
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
 
                             <h4>Questons</h4>
 
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
 
                             <h4>Total Score</h4>
 
@@ -245,12 +242,12 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label">
                                 1  The class size/group makes it comfortable to study effectively
                             </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA1; ?>
                             </label>
@@ -259,10 +256,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 2  The facilities provided enable effective learning                        </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA2; ?>
                             </label>
@@ -270,10 +267,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 3  The concept of the module and its content provide a perfect balance of theoretical and practical content </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA3; ?>
                             </label>
@@ -281,10 +278,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 4  The module content provides an high level of difficulty </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA4; ?>
                             </label>
@@ -292,10 +289,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 5  The module content provides practical applicability  </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA5; ?>
                             </label>
@@ -303,10 +300,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 6  The module/course material helps me understand the lesson               (script, hand-outs, etc.)</label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA6; ?>
                             </label>
@@ -314,10 +311,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 7  The workload of the module is reasonable                                       </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA7; ?>
                             </label>
@@ -325,10 +322,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 8   Internet access is provided to encourage e-learning                            </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA8; ?>
                             </label>
@@ -336,10 +333,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label">9   Overall, I am satisfied with this module  </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catA9; ?>
                             </label>
@@ -356,12 +353,12 @@
             <div class="panel-body">
                 <div class="form-group">
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label">
                                       1  The teacher explains the subject clearly and in ways that are easy to understand 
                                     </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB1; ?>
                             </label>
@@ -369,10 +366,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 2  The teacher is knowledgeable in the subject area                             </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB2; ?>
                             </label>
@@ -380,10 +377,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 3  The teacher is well prepared and organized for class </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB3; ?>
                             </label>
@@ -391,10 +388,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 4  The teacher is enthusiastic about teaching the course and stimulates            student interest</label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB4; ?>
                             </label>
@@ -402,13 +399,13 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 5  The teacher uses a variety of teaching methods (discussion, group work,         
                                      presentation, practical examples, etc.) during class time, and makes the
                                      lesson interesting
                                   </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB5; ?>
                             </label>
@@ -416,10 +413,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label">6 The teacher is punctual for class                                                 </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB6; ?>
                             </label>
@@ -427,12 +424,12 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 7  The teacher is friendly and approachable by showing interest and care               for the students. The teacher takes time when explaining a topic to ensure 
                                         the subject is understood.
                                     </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB7; ?>
                             </label>
@@ -440,10 +437,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label"> 8  The teacher uses assessment methods which are fair and appropriate             </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB8; ?>
                             </label>
@@ -451,10 +448,10 @@
                     </div>
 
                     <div class="row radio">
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-sm-8 col-xs-8">
                             <label class="control-label">9  Overall, I am satisfied with this teacher                                        </label>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
                             <label class="control-label">
                                 <?php echo $catB9; ?>
                             </label>

@@ -34,7 +34,13 @@
                 </div>
             </div>
         </div>
-
+        <div class="row">
+            <div class="col-md-12">        
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" data-toggle="modal" data-target="#myModal"></span> Add Trainer
+                </button>  
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12 ">
                 <div class="table-responsive">
@@ -110,7 +116,7 @@ WHERE
                                     <td>'. $row["module_id"].'-'.$row["module"].'</td>
                                     <td>'. $row["term"].'</td>
                                     <td>'. $row["date_valid"].'</td>
-                                    <td><a href="surveyProfile.php?token='.$row["token"].'">Survey Profile</td>
+                                    <td><a href="surveyProfile.php?token='.$row["token"].'"><button type="button" class="btn btn-sm"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Survey</button></a></td>
                                     
                                 </tr>';                
                             }

@@ -126,8 +126,11 @@
                                     <td>'. $row["trainer"]. '</td>
                                     <td>'. $row["term"]. '</td>
                                     <td>'. $row["date_valid"]. '</td>
-                                    <td><a href="surveyProfile.php?token='. $row["token"].'">Survey Profile</a>
-                                        <a target="_blank" href="student-survey.php?token='. $row["token"].'">Survey Profile</a>
+                                    <td>
+                                    
+                                    
+                                    <a href="surveyProfile.php?token='. $row["token"].'"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Report </button></a>
+                                        <a target="_blank" href="student-survey.php?token='. $row["token"].'"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Survey Form </button></a>
                                     </td>
 
                                 </tr>';

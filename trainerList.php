@@ -27,14 +27,26 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class=" page-header">
+                <div class="page-header">
                     <h3>Trainer List</h3>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">        
+  
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+            <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" data-toggle="modal" data-target="#myModal"></span> Add Trainer
+            </button>  
+            <!-- Button trigger modal -->
+            
 
+            </div>
+        </div>
+   
         <div class="row">
             <div class="col-md-12 ">
+                
                 <div class="table-responsive">
                     <table id="example" class="table table-hover">
                         <thead>
@@ -61,7 +73,7 @@
                                 <tr>
                                     <td>'. $row["trainer_id"]. '</td>
                                     <td>'. $row["trainer"]. '</td>
-                                    <td><a href="trainerProfile.php?tariner_id='. $row["trainer_id"].'">Trainer Profile</a></td>
+                                    <td><a href="trainerProfile.php?tariner_id='. $row["trainer_id"].'"><button type="button" class="btn btn-sm"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Profile</button></a></td>
                                     
                                 </tr>';                
                             }
@@ -74,7 +86,30 @@
                 </div>
             </div>
         </div>
+        
     </div>
+    
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
     <?php include_once("footer.php"); ?>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
