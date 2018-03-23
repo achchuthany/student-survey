@@ -28,4 +28,4 @@ define('DB_USER',$username ); // admin
 define('DB_PASS',$password ); // 8ddTnst22X3Y
 define('DB_NAME',$db);
 
-$con = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME) or die("Failed to connect to MySQL: ".mysqli_connect_error());
+//$con = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME) or die("Failed to connect to MySQL: ".mysqli_connect_error());
