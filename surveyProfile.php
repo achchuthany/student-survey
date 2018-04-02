@@ -38,6 +38,7 @@
                           surveytoken.trainer_id AS trainer_id,
                           trainer.trainer AS trainer,
                           term.term AS term,
+                          term.academic_year AS academic_year,
                           course.course AS course,
                           surveytoken.date_valid AS date_valid,
                           surveytoken.department_id AS department_id,
@@ -84,6 +85,7 @@
                                 $trainer = $row["trainer"];
                                 $trainer_id = $row["trainer_id"];
                                 $term = $row["term"];
+                                $academic_year=$row["academic_year"];
                             
                         }
                 
@@ -211,7 +213,7 @@
                             <label class="control-label">Study Term: </label>
                         </div>
                         <div class="col-md-4 col-sm-8 col-xs-8">
-                            <?php echo $term;?>
+                            <?php echo $term.' ('. $academic_year.')';?>
                         </div>
                     </div>
                 </div>

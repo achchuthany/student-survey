@@ -32,13 +32,13 @@
                 </div>
             </div>
         </div>
- <div class="row">
+<!-- <div class="row">
             <div class="col-md-12">        
                 <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ADD-DEPARTMENT">
                 <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" data-toggle="modal" data-target="#ADD-DEPARTMENT"></span> Add Department
                 </button>  
             </div>
-        </div>
+        </div>-->
         <div class="row">
             <div class="col-md-12 ">
                 <div class="table-responsive">

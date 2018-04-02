@@ -103,7 +103,7 @@ $links = null;
     $result = mysqli_query($con, $sql);
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
-            $links = $links .'<p> <a href="http://www.slgti.achchuthan.org/student-survey/student-survey.php?token='.$row["token"].'" target="_blank">'.$row["module"].' in '.$row["course"].' trained by '.$row["trainer"].' -  '.$row["term"].' </a> </p>';
+            $links = $links .'<p> <a href="'.DB_HOST.'/slgti-student-survey/student-survey.php?token='.$row["token"].'" target="_blank">'.$row["module"].' in '.$row["course"].' trained by '.$row["trainer"].' -  '.$row["term"].' </a> </p>';
         }
     }
 

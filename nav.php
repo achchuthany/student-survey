@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-            <a class="navbar-brand" href="#">Student Satisfaction Survey</a>
+            <a class="navbar-brand" href="#">DASHBOARD</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,10 +19,11 @@
                 <!--<li><a href="student-survey.php">Take Survey</a></li>-->
                 <!--<li><a href="viewRecords.php">View all Records</a></li>-->
                 
-                <li><a href="surveyList.php">Survey</a></li>
-                <li><a href="department.php">Department</a></li>
-                <li><a href="course.php">Course</a></li>
-               <li><a href="trainerList.php">Trainer</a></li>
+                <li><a href="surveyList.php">SURVEY</a></li>
+                <li><a href="department.php">DEPARTMENT</a></li>
+                <li><a href="course.php">COURSE</a></li>
+               <li><a href="trainerList.php">TRAINER</a></li>
+                <li><a href="studentList.php">STUDENT</a></li>
                 
 
             </ul>

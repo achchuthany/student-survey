@@ -35,7 +35,12 @@
 
         <div class="row">
             <div class="col-md-4">
-
+<a href="surveyForm.php">
+        <button type="button" class="btn btn-info">
+        <span class="glyphicon glyphicon-plus-sign"></span> Create New Survey
+        </button>  
+    
+    </a>
             </div>
             <div class="col-md-4">
 
@@ -84,6 +89,7 @@
                           surveytoken.trainer_id AS trainer_id,
                           trainer.trainer AS trainer,
                           term.term AS term,
+                          term.academic_year AS academic_year,
                           course.course AS course,
                           surveytoken.date_valid AS date_valid,
                           surveytoken.department_id AS department_id,
@@ -124,13 +130,19 @@
                                     <td>'. $row["course"]. '</td>
                                     <td>'. $row["module"]. '</td>
                                     <td>'. $row["trainer"]. '</td>
-                                    <td>'. $row["term"]. '</td>
+                                    <td> '. $row["term"]. ' ('.$row["academic_year"].')</td>
                                     <td>'. $row["date_valid"]. '</td>
                                     <td>
                                     
                                     
-                                    <a href="surveyProfile.php?token='. $row["token"].'"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Report </button></a>
-                                        <a target="_blank" href="student-survey.php?token='. $row["token"].'"><button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Survey Form </button></a>
+                                    <a href="surveyProfile.php?token='. $row["token"].'"><button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="View Summary Report"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span>  </button></a>
+                                    
+                                    
+                                        <a target="_blank" href="student-survey.php?token='. $row["token"].'"><button type="button" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="View Survey Form"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span></button></a>
+                                        
+                                        <a target="_blank" href="inviteStudents.php?token='. $row["token"].'"><button type="button" class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="E-mail Invition for Students"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> </button></a>
+                                        
+                                        
                                     </td>
 
                                 </tr>';
@@ -161,6 +173,10 @@
                 ]
             });
         });
+        
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
 
     </script>
 </body>

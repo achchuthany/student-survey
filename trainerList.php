@@ -32,17 +32,17 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+       <!-- <div class="row">
             <div class="col-md-12">        
   
             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
             <span class="glyphicon glyphicon-plus-sign" aria-hidden="true" data-toggle="modal" data-target="#myModal"></span> Add Trainer
             </button>  
-            <!-- Button trigger modal -->
+             Button trigger modal 
             
 
             </div>
-        </div>
+        </div>-->
    
         <div class="row">
             <div class="col-md-12 ">
